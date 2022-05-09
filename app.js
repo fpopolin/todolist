@@ -1,9 +1,10 @@
 //Feature 1: Add new todo
 //Capture buttons and ul elements
-const newTodo = document.querySelector('#new-todo');
-const todos = document.querySelector('#list');
-const hiddenTitle = document.querySelector('.hidden');
-const deleteTodo = document.querySelectorAll('.delete-todo');
+const   newTodo = document.querySelector('#new-todo'),
+        todos = document.querySelector('#list'),
+        hiddenTitle = document.querySelector('.hidden'),
+        deleteTodo = document.querySelectorAll('.delete-todo');
+
 const isEmpty = () => {
     if (todos.children.length === 0){
         hiddenTitle.classList.remove('hidden');
@@ -17,20 +18,20 @@ const isEmpty = () => {
 newTodo.addEventListener('click', (e) => {
     //Add attributes to elements
     //Create form, input, li elements;
-    const form = document.createElement('form');
-    const input = document.createElement('input');
-    const newLi = document.createElement('li');
-    const textSpan = document.createElement('span');
-    const span = document.createElement('span');
-    const row = document.createElement('div');
-    const liCol = document.createElement('div');
-    const btnCol = document.createElement('div');
-    const deleteBtn = document.createElement('button');
+    const   form = document.createElement('form'),
+            input = document.createElement('input'),
+            newLi = document.createElement('li'),
+            textSpan = document.createElement('span'),
+            span = document.createElement('span'),
+            row = document.createElement('div'),
+            liCol = document.createElement('div'),
+            btnCol = document.createElement('div'),
+            deleteBtn = document.createElement('button');
     //Define svg source attribute
     const svgNs = 'http://www.w3.org/2000/svg';
     //Create svg and rect elements;
-    const svg = document.createElementNS(svgNs, 'svg');
-    const rect = document.createElementNS(svgNs, 'rect');
+    const   svg = document.createElementNS(svgNs, 'svg'),
+            rect = document.createElementNS(svgNs, 'rect');
 
     svg.setAttributeNS(null, 'viewBox', "0 0 100 100");
     rect.setAttributeNS(null, 'width', '100');
