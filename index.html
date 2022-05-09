@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Montserrat&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <title>ToDo List</title>
+</head>
+    <body>
+        <h1 id="title">ToDo List</h1>
+        <h1 class="display-5 text-center my-4 hidden text-primary">
+            <p>Todo List is empty!</p>
+            <p>Well done!</p>
+        </h1>
+        <div class="container">
+                <ul id="list">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-9">
+                            <li class="todos">
+                                <span>
+                                    <svg viewBox="0 0 100 100" class="square"><rect width="100" height="100"/></svg>
+                                </span>
+                                <span class="todo">Study Js</span>
+                            </li>
+                        </div>
+                        <div class="col-3 d-flex align-items-center justify-content-between">
+                            <button class="btn btn-lg btn-danger delete-todo">Delete</button>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-9">
+                            <li class="todos">
+                                <span>
+                                    <svg viewBox="0 0 100 100" class="square"><rect width="100" height="100"/></svg>
+                                </span>
+                                <span class="todo">Read 10 pages</span></li>
+                        </div>
+                        <div class="col-3 d-flex align-items-center justify-content-start">
+                            <button class="btn btn-lg btn-danger delete-todo">Delete</button>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-9">
+                            <li class="todos">
+                                <span>
+                                    <svg viewBox="0 0 100 100" class="square"><rect width="100" height="100"/></svg>
+                                </span>
+                                <span class="todo">Walk dog</span></li>
+                        </div>
+                        <div class="col-3 d-flex align-items-center justify-content-start">
+                            <button class="btn btn-lg btn-danger delete-todo">Delete</button>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-9">
+                            <li class="todos">
+                                <span>
+                                    <svg viewBox="0 0 100 100" class="square"><rect width="100" height="100"/></svg>
+                                </span>
+                                <span class="todo">Play Guitar</span></li>
+                        </div>
+                        <div class="col-3 d-flex align-items-center justify-content-start">
+                            <button class="btn btn-lg btn-danger delete-todo">Delete</button>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-9">
+                            <li class="todos">
+                                <span>
+                                    <svg viewBox="0 0 100 100" class="square"><rect width="100" height="100"/></svg>
+                                </span>
+                                <span class="todo">Relax a little</span></li>
+                        </div>
+                        <div class="col-3 d-flex align-items-center justify-content-start">
+                            <button class="btn btn-lg btn-danger delete-todo">Delete</button>
+                        </div>
+                    </div>
+                </ul>
+            <div class="buttons">
+                <button id="new-todo" class="button">New Todo</button>
+            </div>
+        </div>
+        <footer id="footer" class="fixed-bottom">
+            <p class="mt-4">
+                Developed with <?xml version="1.0" encoding="UTF-8"?>
+                <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg id="heart" width="1.25em" height="1.25em" enable-background="new 0 0 600.824 600.824" version="1.1" viewBox="0 0 600.824 600.824" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m300.41 579.3l-3.838-2.256c-0.417-0.244-42.267-24.99-93.594-66.887-47.451-38.732-113.07-100.56-156.2-175.12-31.032-53.68-46.772-107.34-46.783-159.5-2e-3 -22.647 4.062-43.951 12.079-63.319 7.697-18.593 18.843-34.986 33.129-48.724 28.135-27.056 66.771-41.957 108.79-41.957 25.468 0 48.491 4.055 68.428 12.051 19.008 7.624 35.286 18.838 48.382 33.333 13.457 14.893 23.404 33.046 29.605 53.767 6.201-20.723 16.148-38.872 29.607-53.767 13.098-14.494 29.377-25.709 48.385-33.332 19.939-7.997 42.965-12.051 68.434-12.051 42.016 0 80.648 14.901 108.78 41.957 14.287 13.738 25.434 30.132 33.131 48.725 8.016 19.368 12.078 40.672 12.072 63.319-0.01 52.166-15.752 105.83-46.795 159.5-19.068 32.977-44.084 66.23-74.354 98.834-24.145 26.008-51.676 51.676-81.828 76.289-51.328 41.896-93.182 66.641-93.598 66.887l-3.837 2.252zm-146.42-542.62c-38.085 0-72.993 13.399-98.293 37.729-26.54 25.522-40.566 60.49-40.561 101.12 0.01 49.464 15.066 100.58 44.75 151.92 23.146 40.018 68.384 102.13 152.45 170.8 41.561 33.947 76.727 56.404 88.071 63.408 11.345-7.002 46.513-29.461 88.074-63.408 46.4-37.898 110.51-98.295 152.44-170.8 29.691-51.34 44.752-102.46 44.76-151.93 0.012-40.634-14.014-75.602-40.555-101.12-25.301-24.329-60.207-37.729-98.287-37.729-45.842 0-81.363 13.59-105.58 40.393-21.766 24.088-33.271 58.135-33.271 98.461h-15.143c0-40.325-11.505-74.373-33.27-98.461-24.221-26.801-59.741-40.392-105.58-40.392z"/>
+                </svg>
+                by TGDSoft
+            </p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+        <script src="./app.js"></script>
+    </body>
+</html>

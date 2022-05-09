@@ -1,0 +1,170 @@
+/* * {
+    border: 1px solid rgb(21, 21, 146);
+} */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #f3f6f4;
+    background-color: #0c1220;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 6px;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #0c1220;
+    transition: all 100ms;
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.todos {
+    width: 100%;
+    list-style: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.8em;
+    margin: 0.5em;
+    padding: 0.2em;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.square {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.4em;
+    fill: none;
+    stroke: #f3f6f4;
+    stroke-width: .7em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.button {
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    border: 1px solid #2e80a9;
+    border-radius: 6px;
+    background-color: #2e80a9;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    transition: all 100ms;
+}
+
+.delete-todo {
+    /* display: none; */
+    font-weight: bold;
+    font-family: 'PT Sans Narrow', sans-serif;
+    transition: all 125ms;
+}
+
+.delete-todo:hover{
+    transform: scale(1.1);
+}
+
+.show-button{
+    display: flex;
+}
+
+/* Dynamically applied classes */
+.done {
+    color: #8e8f8e;
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+
+.check {
+    stroke: #fcfffd;
+    fill: #fcfffd;
+    opacity: 1 !important;
+}
+
+.input-text {
+    width: 50%;
+    font-size: 1em;
+    background-color: #658494;
+    border: 1px solid #2e80a9;;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#title {
+    font-family: 'Goldman', cursive;
+    font-size: 3em;
+    padding: 0.7em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+    background-color: #2e80a9;
+}
+
+#new-todo:hover {
+    background-color: #0bab1c;
+    border-color: #0bab1c;
+    transform: scale(1.05);
+}
+
+#clear-todo:hover {
+    background-color:#cd9d00;
+    border-color:#edbd1d;
+    transform: scale(1.05);
+}
+
+#title {
+    text-align: center;
+}
+
+#footer {
+    padding: 1.5em;
+    margin-top: 3.5em;
+    background-color: #327ab2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#heart {
+    fill: #bb0f0f;
+    stroke: #bb0f0f;
+    stroke-width: 1em;
+}
+
+@media (min-width: 768px){
+    .container {
+        width: 50%;
+        padding-bottom: 1em;
+        background-color: #2e80a9;
+        transition: all 500ms;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1em;
+    }
+
+    .button {
+        border: 1px solid #0c1220;
+        background-color: #0c1220;
+    }
+}
